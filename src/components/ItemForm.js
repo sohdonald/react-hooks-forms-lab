@@ -6,11 +6,12 @@ function ItemForm({onItemFormSubmit}) {
   const [newCategory, setNewCategory] = useState("Produce");
 
 function handleItem(event) {
-  setNewItem(event.target.value);
+  setNewItem(event.target.value); // this targets the value for text input's onChange state
+  // the state is the current option from the ItemForm component's html select that appears on screen
 }
 
 function handleCategory(event) {
-  setNewCategory(event.target.value);
+  setNewCategory(event.target.value); // the category of setNewCategory is displayed when the site boots up
 }
 
 function handleSubmit(event) {
